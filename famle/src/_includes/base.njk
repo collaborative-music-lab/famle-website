@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ FaMLE }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/styles.css" | url }}">
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-container">
+    <nav class="top-nav">
+      <a href="{{ "/" | url }}">FaMLE</a>
+      <a href="{{ "/video/" | url }}">Video</a>
+      <a href="{{ "/resources/" | url }}">Resources</a>
+      <a href="{{ "/contact/" | url }}">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main">
+  <div class="main-container">
+    {{ content | safe }}
+  </div>
+</main>
+</body>
+</html>

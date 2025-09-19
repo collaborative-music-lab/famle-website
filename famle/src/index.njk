@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Home
+---
+
+<div class="main-body">
+  <div class="main-text">
+    <p>
+      FaMLE, the MIT Laptop Ensemble, is a forum for the exploration of emerging digital musical practices, with a particular focus on collaborative music performance. </p>
+      <p>
+      We use a variety of software and hardware instruments to learn about current performance techniques, and ensemble members have the opportunity to create new compositions and instruments to explore their personal musical interests. </p>
+      <p>
+        Open to all members of the MIT community, FaMLE offers a practice-based vision of the future of digital musicianship.
+    </p>
+  </div>
+
+  <div class="main-grid">
+    <div class="project-grid">
+      {% for project in collections.projects %}
+        <a class="project-card" href="{{ project.url | url }}">
+        <img src="{{ project.data.image }}" alt="{{ project.data.title }}">
+        <div class="overlay">
+        <h2>{{ project.data.title }}</h2>
+      </div>
+    </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
