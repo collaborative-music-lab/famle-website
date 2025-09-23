@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: Home
+---
+
+<div class="main-body">
+  <div class="main-text">
+    <p>
+      The collaborative music lab focuses on creating shared musical experiences to the creation of new software and hardware instruments. In particular, we are interested in:
+      - instrument design as creative process
+      -  musical knowledge and aesthetics embedded in musical instruments
+      -  how musical practice using music technology creates cultural impact
+      -  how people make electronic music together
+      - future practices of making electronic music in ensemble
+      </p>
+      <p>
+      The CML is directed by [Ian Hattwick](https://ianhattwick.com)
+      </p>
+
+  </div>
+
+  <div class="main-grid">
+    <div class="project-grid">
+      {% for project in collections.projects %}
+        <a class="project-card" href="{{ project.url | url }}">
+        <img src="{{ project.data.image }}" alt="{{ project.data.title }}">
+        <div class="overlay">
+        <h2>{{ project.data.title }}</h2>
+      </div>
+    </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
