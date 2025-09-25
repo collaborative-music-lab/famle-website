@@ -232,3 +232,21 @@ button {
 button:hover {
   background-color: #fff3b0;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: lightgrey;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkgrey;
+}

@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: "Getting Started with the Voxel synth table"
-image: "/famle/images/famle_1.jpg"
+image: "/images/famle_1.jpg"
 tags: projects
 ---
 

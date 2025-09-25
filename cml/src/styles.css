@@ -1,17 +1,17 @@
 /* Base layout */
 /* Global dark theme base */
 /* colors 
-background e0e0e0
-text 36494E
-4C5B5C
-C84630
-120D31
-
+background e0e0e0 //???
+text 36494E //green gray
+4C5B5C //light gray
+C84630 //orange
+120D31 //russian violet
+F1F7ED //mint cream
 */
 body {
   margin: 0;
-  font-family: 'Karla', serif;
-  background-color: #F1F7ED;
+  font-family: 'Lora', serif;
+  background-color: #FCF7F0;
   color: #36494E;
   line-height: 1.6;
 }
@@ -19,23 +19,24 @@ body {
 /* Headings */
 h1, h2, h3 {
   font-weight: 700;
-  color: #36494E;
+  color: #120D31;
   margin-bottom: 0.5rem;
 }
 
 h1 {
   font-size: 2rem;
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 /* Top navbar */
 .site-header {
-  background-color: #1e1e1e;
+  background-color: #120D31;
   border-bottom: 1px solid #333;
 }
 
@@ -47,13 +48,34 @@ h2 {
 
 .top-nav {
   display: flex;
-  gap: 1.5rem;
+  align-items: flex-end; 
 }
 
 .top-nav a {
-  color: #36494E;
+  color: #FCF7F0;
   text-decoration: none;
   font-weight: bold;
+}
+
+
+.nav-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FCF7F0;
+  text-decoration: none;
+}
+
+.nav-links {
+  margin-left: auto;       /* pushes this group to the right */
+  display: flex;
+  gap: 2rem;               /* spacing between links */
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FCF7F0;
+  text-decoration: none;
 }
 
 .top-nav a:hover {
@@ -184,7 +206,7 @@ figcaption {
 
 /* Left text column */
 .main-text {
-  flex: 3;
+  flex: 0 1 400px;   /* don’t grow, do shrink, base size 400px */
   max-width: 400px;
 }
 

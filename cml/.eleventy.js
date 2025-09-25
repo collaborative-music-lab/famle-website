@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTag("projects");
   });
 
+  eleventyConfig.addPairedShortcode("md", (content) => {
+    return require("markdown-it")().render(content);
+  });
+
   return {
     //pathPrefix: "/cml",  // this is the key setting
     dir: {

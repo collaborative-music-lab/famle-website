@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: "Concerts"
-image: "/famle/images/FaMLE_LOGO.jpg"
+image: "/images/FaMLE_LOGO.jpg"
 tags: projects
 ---
 

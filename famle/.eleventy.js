@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/famle",  // this is the key setting
+    //pathPrefix: "",  // this is the key setting
     dir: {
       input: "src",
       output: "dist",

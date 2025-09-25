@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: "Live Coding in FaMLE"
-image: "/famle/images/livecode_2.png"
+image: "/images/livecode_2.png"
 tags: projects
 ---
 
